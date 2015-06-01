@@ -1,0 +1,20 @@
+<div class="container" id="mysection">
+            <div class="col-lg-12">
+            
+            </div>
+            <div id="row1" class="row" ng-controller="customersCtrl">
+                <div class="col-md-4 col-lg-4 col-sm-12" ng-repeat="x in names">
+                    <div class="panel panel-default" href = "javascript:void(0)">
+                    <div class="panel-heading">
+                        <img id="business-image" src= {{x.imageurl}} />
+                    </div>
+                    <div class="panel-body">
+                        <p>{{ x.Name }}</p>
+                        <p>Created on : {{ x.Created-on }}</p>
+                        <p>Contributor : {{ x.Contributor }}</p>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+</div>
